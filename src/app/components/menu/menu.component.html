@@ -1,0 +1,34 @@
+<header class="bg-black">
+  <div class="lg:hidden">
+    <mat-toolbar class="bg-black text-white justify-end fixed">
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    </mat-toolbar>
+  
+    <mat-sidenav-container>
+      <mat-sidenav #snav mode="side" [fixedInViewport]="true" position="end">
+        <mat-nav-list>
+          <a href="#home" (click)="snav.toggle()" mat-list-item>HOME</a>
+          <a href="#skills" (click)="snav.toggle()" mat-list-item>SKILLS</a>
+          <a href="#mywork" (click)="snav.toggle()" mat-list-item>MY WORK</a>
+          <a href="#about" (click)="snav.toggle()" mat-list-item>ABOUT</a>
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
+  <div class="lg:flex hidden flex-row justify-between">
+    <div id="logo" class="text-white">
+      <img src="assets/images/logo.png">
+    </div>
+    <ul class="lg:flex row justify-evenly items-center text-white w-2/5 h-full mt-4">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#mywork">MY WORK</a></li>
+      <li><a href="#about">ABOUT</a></li>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,112 @@
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+}
+
+.skills-card__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px #d4d1d1 ;
+  background-color: white;
+  margin-bottom: -24px;
+  z-index: 1;
+}
+
+.skills-card__text {
+  width: 120px;
+  height: 70px;
+  border-radius: 3px;
+  background-color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#skills-html {
+  background-image: url(../../../assets/images/html.png);
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-css {
+  background-image: url(../../../assets/images/css.png);
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-js {
+  background-image: url(../../../assets/images/js.png);
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-java {
+  background-image: url(../../../assets/images/java.png);
+  background-size:40px 40px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-angular {
+  background-image: url(../../../assets/images/angular.png);
+  background-size:60px 40px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-react {
+  background-image: url(../../../assets/images/react.png);
+  background-size:35px 35px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-spring {
+  background-image: url(../../../assets/images/spring.png);
+  background-size:80px 60px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+
+#skills-git {
+  background-image: url(../../../assets/images/git.png);
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#skills-sql {
+  background-image: url(../../../assets/images/database.png);
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .skills-card {
+    margin: 6px;
+  }
+  
+  .skills-card__logo {
+    width: 38px;
+    height: 38px;
+    margin-bottom: -19px;
+  }
+
+  .skills-card__text {
+    width: 80px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: white;
+    padding-top: 30px;
+    text-align: center;
+    font-size: small;
+  }
+}

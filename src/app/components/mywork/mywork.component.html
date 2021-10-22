@@ -1,0 +1,23 @@
+<section id="mywork" class="lg:pt-4 pt-12 pb-4 bg-black">
+  <h2 class="text-center text-xl font-bold text-white my-4">{{ title }}</h2>
+  <div class="flex flex-col content-center items-center">
+    <div class="flex flex-row w:85 justify-between">
+      <button class="btn-project-select" [class.btn-select]="filterBy=='all'" (click)="filterBy='all'">All</button>
+      <button class="btn-project-select" [class.btn-select]="filterBy=='react'" (click)="filterBy='react'">React</button>
+      <button class="btn-project-select" [class.btn-select]="filterBy=='javascript'" (click)="filterBy='javascript'">JS/HTML</button>
+      <button class="btn-project-select" [class.btn-select]="filterBy=='wordpress'" (click)="filterBy='wordpress'">Worpress</button>
+    </div>
+    <div class="flex flex-row w-3/5 justify-center items-center flex-wrap">
+      <div 
+        id="{{image.id}}" 
+        class="mywork-img m-4 w-60 h-60" 
+        *ngFor="let image of (visibleImages | projectFilter:filterBy)" [ngStyle]="{'background-image': 'url(' + image.url + ')'}">
+        <div class="w-60 h-60 mywork-card">
+          <div class="btn-tryout">
+            <a href="{{image.web}}">Try out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
